@@ -4,9 +4,10 @@ namespace HTML5
 {
     public enum CharacterName
     {
-        SherlockShellinford,
-        YuzurizakiNero,
-        HerculeBurton,
-        CordeliaGlauca,
+        // Milkyholmes
+        Sherlock_Shellinford,
+        Yuzurizaki_Nero,
+        Hercule_Burton,
+        Cordelia_Glauca,
     }
 }

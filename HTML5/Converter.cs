@@ -21,10 +21,10 @@ namespace HTML5
 
             switch (characterName)
             {
-                case CharacterName.SherlockShellinford: brushColor = Colors.Pink;   break;
-                case CharacterName.YuzurizakiNero:                     brushColor = Colors.Yellow; break;
-                case CharacterName.HerculeBurton:         brushColor = Colors.Green;  break;
-                case CharacterName.CordeliaGlauca:           brushColor = Colors.Blue;   break;
+                case CharacterName.Sherlock_Shellinford: brushColor = Colors.Pink;   break;
+                case CharacterName.Yuzurizaki_Nero:                     brushColor = Colors.Yellow; break;
+                case CharacterName.Hercule_Burton:         brushColor = Colors.Green;  break;
+                case CharacterName.Cordelia_Glauca:           brushColor = Colors.Blue;   break;
             }
 
             return new SolidColorBrush(brushColor);

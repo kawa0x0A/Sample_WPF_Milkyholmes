@@ -20,7 +20,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ComboBox Grid.Row="0" Name="CharacterComboBox" ItemsSource="{Binding Source={StaticResource CharacterNameKey}}" SelectedItem="{x:Static local:CharacterName.SherlockShellinford}"/>
+        <ComboBox Grid.Row="0" Name="CharacterComboBox" ItemsSource="{Binding Source={StaticResource CharacterNameKey}}" SelectedItem="{x:Static local:CharacterName.Sherlock_Shellinford}"/>
         <Rectangle Grid.Row="1" Fill="{Binding ElementName=CharacterComboBox, Path=SelectedItem, Converter={StaticResource CharacterColorConverterKey}}"/>
     </Grid>
 </Window>
