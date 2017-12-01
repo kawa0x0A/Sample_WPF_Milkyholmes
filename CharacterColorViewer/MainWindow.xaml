@@ -14,7 +14,7 @@
                 <x:Type TypeName="common:CharacterName"/>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
-        <common:CharacterColorConverter x:Key="CharacterColorConverterKey"/>
+        <local:CharacterColorConverter x:Key="CharacterColorConverterKey"/>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
