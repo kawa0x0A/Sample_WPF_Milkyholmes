@@ -6,8 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Media;
+using Common;
 
-namespace Common
+namespace CharacterColorViewer
 {
     public class CharacterColorConverter : IValueConverter
     {
