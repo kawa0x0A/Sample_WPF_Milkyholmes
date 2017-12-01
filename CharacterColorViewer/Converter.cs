@@ -27,6 +27,11 @@ namespace CharacterColorViewer
                 case CharacterName.Hasegawa_Hirano:      brushColor = Colors.DarkGray;    break;
                 case CharacterName.Zenigata_Tsugiko:     brushColor = Colors.LawnGreen;   break;
                 case CharacterName.Toyama_Saku:          brushColor = Colors.LightPink;   break;
+
+                case CharacterName.Arsene:      brushColor = Colors.Purple; break;
+                case CharacterName.Twenty:      brushColor = Colors.Black;  break;
+                case CharacterName.Stone_River: brushColor = Colors.Black;  break;
+                case CharacterName.rat:         brushColor = Colors.Black;  break;
             }
 
             return new SolidColorBrush(brushColor);
