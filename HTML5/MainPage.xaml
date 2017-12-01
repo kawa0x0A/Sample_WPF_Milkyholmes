@@ -2,11 +2,19 @@
     x:Class="HTML5.MainPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:HTML5"
+    xmlns:local="clr-namespace:HTML5"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Canvas>
-        <TextBlock Text="Hello World!" x:Name="TextBlock1" Canvas.Left="20" Canvas.Top="30"/>
-    </Canvas>
+    <Page.Resources>
+        <local:CharacterColorConverter x:Key="CharacterColorConverterKey"/>
+    </Page.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <ComboBox Grid.Row="0" Name="CharacterComboBox"/>
+        <Rectangle Grid.Row="1" Fill="{Binding ElementName=CharacterComboBox, Path=SelectedItem, Converter={StaticResource CharacterColorConverterKey}}"/>
+    </Grid>
 </Page>
