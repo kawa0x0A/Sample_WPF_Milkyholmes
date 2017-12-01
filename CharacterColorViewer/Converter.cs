@@ -38,6 +38,9 @@ namespace CharacterColorViewer
 
                 case CharacterName.Kobayashi_Opera: brushColor = Colors.SaddleBrown; break;
                 case CharacterName.Ellery_Himeyuri: brushColor = Colors.RoyalBlue;   break;
+
+                case CharacterName.Amagi_Marine: brushColor = Colors.Orange; break;
+                case CharacterName.Hojo_Miki: brushColor = Colors.Violet; break;
             }
 
             return new SolidColorBrush(brushColor);

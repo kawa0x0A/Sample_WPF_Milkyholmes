@@ -29,5 +29,9 @@ namespace CharacterColorViewer
         // 探偵
         Kobayashi_Opera,
         Ellery_Himeyuri,
+
+        // アイドル
+        Amagi_Marine,
+        Hojo_Miki,
     }
 }
