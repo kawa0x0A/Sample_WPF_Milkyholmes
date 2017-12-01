@@ -14,13 +14,14 @@
                 <x:Type TypeName="common:CharacterName"/>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
+        <common:CharacterColorConverter x:Key="CharacterColorConverterKey"/>
     </Window.Resources>
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ComboBox Grid.Row="0" Name="CharacterComboBox" ItemsSource="{Binding Source={StaticResource CharacterNameKey}}"/>
-        <Rectangle Grid.Row="1" Fill="Gray"/>
+        <ComboBox Grid.Row="0" Name="CharacterComboBox" ItemsSource="{Binding Source={StaticResource CharacterNameKey}}" SelectedItem="{x:Static common:CharacterName.シャーロックシェリンフォード}"/>
+        <Rectangle Grid.Row="1" Fill="{Binding ElementName=CharacterComboBox, Path=SelectedItem, Converter={StaticResource CharacterColorConverterKey}}"/>
     </Grid>
 </Window>
