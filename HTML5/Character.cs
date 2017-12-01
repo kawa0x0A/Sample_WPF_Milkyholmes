@@ -21,5 +21,9 @@ namespace HTML5
         Twenty,
         Stone_River,
         rat,
+
+        // フェザーズ
+        Tokiwa_Kazumi,
+        Myojingawa_Alice,
     }
 }

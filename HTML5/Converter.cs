@@ -35,6 +35,9 @@ namespace HTML5
                 case CharacterName.Twenty:      brushColor = Colors.Black;  break;
                 case CharacterName.Stone_River: brushColor = Colors.Black;  break;
                 case CharacterName.rat:         brushColor = Colors.Black;  break;
+
+                case CharacterName.Tokiwa_Kazumi: brushColor = Colors.DarkSlateBlue; break;
+                case CharacterName.Myojingawa_Alice: brushColor = Colors.WhiteSmoke; break;
             }
 
             return new SolidColorBrush(brushColor);
