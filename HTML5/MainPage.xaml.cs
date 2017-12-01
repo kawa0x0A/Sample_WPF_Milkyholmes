@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Common;
 
 namespace HTML5
 {

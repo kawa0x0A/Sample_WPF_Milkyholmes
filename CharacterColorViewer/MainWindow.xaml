@@ -5,13 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:CharacterColorViewer"
         xmlns:sys="clr-namespace:System;assembly=mscorlib"
-        xmlns:common="clr-namespace:Common;assembly=Common"
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
         <ObjectDataProvider x:Key="CharacterNameKey" MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
             <ObjectDataProvider.MethodParameters>
-                <x:Type TypeName="common:CharacterName"/>
+                <x:Type TypeName="local:CharacterName"/>
             </ObjectDataProvider.MethodParameters>
         </ObjectDataProvider>
         <local:CharacterColorConverter x:Key="CharacterColorConverterKey"/>
@@ -21,7 +20,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ComboBox Grid.Row="0" Name="CharacterComboBox" ItemsSource="{Binding Source={StaticResource CharacterNameKey}}" SelectedItem="{x:Static common:CharacterName.シャーロックシェリンフォード}"/>
+        <ComboBox Grid.Row="0" Name="CharacterComboBox" ItemsSource="{Binding Source={StaticResource CharacterNameKey}}" SelectedItem="{x:Static local:CharacterName.シャーロックシェリンフォード}"/>
         <Rectangle Grid.Row="1" Fill="{Binding ElementName=CharacterComboBox, Path=SelectedItem, Converter={StaticResource CharacterColorConverterKey}}"/>
     </Grid>
 </Window>

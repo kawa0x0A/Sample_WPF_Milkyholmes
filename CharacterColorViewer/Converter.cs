@@ -6,7 +6,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Media;
-using Common;
 
 namespace CharacterColorViewer
 {
@@ -19,10 +18,10 @@ namespace CharacterColorViewer
 
             switch (characterName)
             {
-                case CharacterName.シャーロックシェリンフォード: brushColor = Colors.Pink; break;
-                case CharacterName.譲崎ネロ: brushColor = Colors.Yellow; break;
-                case CharacterName.エルキュールバートン: brushColor = Colors.Green; break;
-                case CharacterName.コーデリアグラウカ: brushColor = Colors.Blue; break;
+                case CharacterName.シャーロックシェリンフォード: brushColor = Colors.Pink;   break;
+                case CharacterName.譲崎ネロ:                     brushColor = Colors.Yellow; break;
+                case CharacterName.エルキュールバートン:         brushColor = Colors.Green;  break;
+                case CharacterName.コーデリアグラウカ:           brushColor = Colors.Blue;   break;
             }
 
             return new SolidColorBrush(brushColor);
