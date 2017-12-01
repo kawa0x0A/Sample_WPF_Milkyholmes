@@ -19,9 +19,9 @@ namespace CharacterColorViewer
             switch (characterName)
             {
                 case CharacterName.Sherlock_Shellinford: brushColor = Colors.Pink;   break;
-                case CharacterName.Yuzurizaki_Nero:                     brushColor = Colors.Yellow; break;
-                case CharacterName.Hercule_Burton:         brushColor = Colors.Green;  break;
-                case CharacterName.Cordelia_Glauca:           brushColor = Colors.Blue;   break;
+                case CharacterName.Yuzurizaki_Nero:      brushColor = Colors.Yellow; break;
+                case CharacterName.Hercule_Burton:       brushColor = Colors.Green;  break;
+                case CharacterName.Cordelia_Glauca:      brushColor = Colors.Blue;   break;
             }
 
             return new SolidColorBrush(brushColor);
