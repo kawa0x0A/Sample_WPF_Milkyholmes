@@ -38,6 +38,9 @@ namespace HTML5
 
                 case CharacterName.Tokiwa_Kazumi: brushColor = Colors.DarkSlateBlue; break;
                 case CharacterName.Myojingawa_Alice: brushColor = Colors.WhiteSmoke; break;
+
+                case CharacterName.Kobayashi_Opera: brushColor = Colors.SaddleBrown; break;
+                case CharacterName.Ellery_Himeyuri: brushColor = Colors.RoyalBlue;   break;
             }
 
             return new SolidColorBrush(brushColor);

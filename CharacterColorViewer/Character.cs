@@ -25,5 +25,9 @@ namespace CharacterColorViewer
         // フェザーズ
         Tokiwa_Kazumi,
         Myojingawa_Alice,
+
+        // 探偵
+        Kobayashi_Opera,
+        Ellery_Himeyuri,
     }
 }

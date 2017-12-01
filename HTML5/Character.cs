@@ -25,5 +25,9 @@ namespace HTML5
         // フェザーズ
         Tokiwa_Kazumi,
         Myojingawa_Alice,
+
+        // 探偵
+        Kobayashi_Opera,
+        Ellery_Himeyuri,
     }
 }
