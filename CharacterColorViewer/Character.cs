@@ -9,5 +9,11 @@ namespace CharacterColorViewer
         Yuzurizaki_Nero,
         Hercule_Burton,
         Cordelia_Glauca,
+
+        // Geneus 4
+        Akechi_Kokoro,
+        Hasegawa_Hirano,
+        Toyama_Saku,
+        Zenigata_Tsugiko,
     }
 }

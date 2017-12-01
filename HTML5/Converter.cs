@@ -25,6 +25,11 @@ namespace HTML5
                 case CharacterName.Yuzurizaki_Nero:      brushColor = Colors.Yellow; break;
                 case CharacterName.Hercule_Burton:       brushColor = Colors.Green;  break;
                 case CharacterName.Cordelia_Glauca:      brushColor = Colors.Blue;   break;
+
+                case CharacterName.Akechi_Kokoro:        brushColor = Colors.LightYellow; break;
+                case CharacterName.Hasegawa_Hirano:      brushColor = Colors.DarkGray;    break;
+                case CharacterName.Zenigata_Tsugiko:     brushColor = Colors.LawnGreen;   break;
+                case CharacterName.Toyama_Saku:          brushColor = Colors.LightPink;   break;
             }
 
             return new SolidColorBrush(brushColor);
