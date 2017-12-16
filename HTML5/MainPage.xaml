@@ -8,6 +8,7 @@
     mc:Ignorable="d">
     <Page.Resources>
         <local:CharacterColorConverter x:Key="CharacterColorConverterKey"/>
+        <local:CharacterNameConverter x:Key="CharacterNameConverterKey"/>
     </Page.Resources>
     <Grid>
         <Grid.RowDefinitions>
@@ -15,7 +16,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <TextBlock Grid.Row="0" Text="{Binding ElementName=CharacterComboBox, Path=SelectedItem}"/>
+        <TextBlock Grid.Row="0" Text="{Binding ElementName=CharacterComboBox, Path=SelectedItem, Converter={StaticResource CharacterNameConverterKey}}" FontSize="18"/>
         <ComboBox Grid.Row="1" Name="CharacterComboBox"/>
         <Rectangle Grid.Row="2" Fill="{Binding ElementName=CharacterComboBox, Path=SelectedItem, Converter={StaticResource CharacterColorConverterKey}}"/>
     </Grid>
