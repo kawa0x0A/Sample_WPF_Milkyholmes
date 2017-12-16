@@ -26,7 +26,7 @@ namespace CharacterColorViewer
         Tokiwa_Kazumi,
         Myojingawa_Alice,
 
-        // 探偵
+        // 教官, 指揮官
         Kobayashi_Opera,
         Ellery_Himeyuri,
 
