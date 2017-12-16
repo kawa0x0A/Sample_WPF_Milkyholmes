@@ -39,8 +39,8 @@ JSIL.DeclareNamespace("HTML5");
     $T03().OutputAppFilesPath = "app-cshtml5\\app\\";
     $T03().OutputLibrariesPath = "app-cshtml5\\libs\\";
     $T03().OutputResourcesPath = "app-cshtml5\\res\\";
-    var ResourceDictionary_a45b8c30ee124de0bcbcfbb18d815e15 = new ($T04())();
-    this['set_Resources'](ResourceDictionary_a45b8c30ee124de0bcbcfbb18d815e15);
+    var ResourceDictionary_e9676daf79674b7a9458b6d2e9c7d648 = new ($T04())();
+    this['set_Resources'](ResourceDictionary_e9676daf79674b7a9458b6d2e9c7d648);
   };
 
   JSIL.MakeType({
@@ -96,6 +96,9 @@ JSIL.MakeEnum(
     Ellery_Himeyuri: 15, 
     Amagi_Marine: 16, 
     Hojo_Miki: 17, 
+    Otoha_Leonard: 18, 
+    Parte_Leonard: 19, 
+    Tact_Leonard: 20, 
   }
 );
 
@@ -215,6 +218,18 @@ JSIL.MakeEnum(
         brushColor = $T04()['get_Violet']()['MemberwiseClone']();
         break;
 
+      case 18: 
+        brushColor = $T04()['get_LightPink']()['MemberwiseClone']();
+        break;
+
+      case 19: 
+        brushColor = $T04()['get_Cyan']()['MemberwiseClone']();
+        break;
+
+      case 20: 
+        brushColor = $T04()['get_Orange']()['MemberwiseClone']();
+        break;
+
     }
     return $S00().Construct(brushColor['MemberwiseClone']());
   };
@@ -262,6 +277,170 @@ JSIL.MakeEnum(
 
 })();
 
+/* class HTML5.CharacterNameConverter */ 
+
+(function CharacterNameConverter$Members () {
+  var $, $thisType;
+  var $T00 = function () {
+    return ($T00 = JSIL.Memoize($asm_mscorlib.System.Object)) ();
+  };
+  var $T01 = function () {
+    return ($T01 = JSIL.Memoize($asm_mscorlib.System.Type)) ();
+  };
+  var $T02 = function () {
+    return ($T02 = JSIL.Memoize($asm_mscorlib.System.String)) ();
+  };
+  var $T03 = function () {
+    return ($T03 = JSIL.Memoize($asm_HTML5.HTML5.CharacterName)) ();
+  };
+  var $T04 = function () {
+    return ($T04 = JSIL.Memoize($asm_mscorlib.System.NotImplementedException)) ();
+  };
+  var $S00 = function () {
+    return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm_mscorlib.TypeRef("System.NotImplementedException"), null))) ();
+  };
+
+  function CharacterNameConverter__ctor () {
+  };
+
+  function CharacterNameConverter_Convert (value, targetType, parameter, language) {
+    if (value === null) {
+      return $T02().Empty;
+    }
+    var characterName = $T03().$Cast(value);
+    var text = $T02().Empty;
+    switch (characterName['valueOf']()) {
+      case 0: 
+        text = "\u30b7\u30e3\u30fc\u30ed\u30c3\u30af\u30fb\u30b7\u30a7\u30ea\u30f3\u30d5\u30a9\u30fc\u30c9";
+        break;
+
+      case 1: 
+        text = "\u8b72\u5d0e \u30cd\u30ed";
+        break;
+
+      case 2: 
+        text = "\u30a8\u30eb\u30ad\u30e5\u30fc\u30eb\u30fb\u30d0\u30fc\u30c8\u30f3";
+        break;
+
+      case 3: 
+        text = "\u30b3\u30fc\u30c7\u30ea\u30a2\u30fb\u30b0\u30e9\u30a6\u30ab";
+        break;
+
+      case 4: 
+        text = "\u660e\u667a \u5c0f\u8863";
+        break;
+
+      case 5: 
+        text = "\u9577\u8c37\u5ddd \u5e73\u4e43";
+        break;
+
+      case 6: 
+        text = "\u9060\u5c71 \u54b2";
+        break;
+
+      case 7: 
+        text = "\u92ad\u5f62 \u6b21\u5b50";
+        break;
+
+      case 8: 
+        text = "\u30a2\u30eb\u30bb\u30fc\u30cc";
+        break;
+
+      case 9: 
+        text = "\u30c8\u30a5\u30a8\u30f3\u30c6\u30a3";
+        break;
+
+      case 10: 
+        text = "\u30b9\u30c8\u30fc\u30f3\u30ea\u30d0\u30fc";
+        break;
+
+      case 11: 
+        text = "\u30e9\u30c3\u30c8";
+        break;
+
+      case 12: 
+        text = "\u5e38\u76e4 \u30ab\u30ba\u30df";
+        break;
+
+      case 13: 
+        text = "\u660e\u795e\u5ddd \u30a2\u30ea\u30b9";
+        break;
+
+      case 14: 
+        text = "\u5c0f\u6797 \u30aa\u30da\u30e9";
+        break;
+
+      case 15: 
+        text = "\u30a8\u30e9\u30ea\u30fc \u59eb\u767e\u5408";
+        break;
+
+      case 16: 
+        text = "\u5929\u57ce \u8309\u8389\u97f3";
+        break;
+
+      case 17: 
+        text = "\u6cd5\u6761 \u7f8e\u6a39";
+        break;
+
+      case 18: 
+        text = "\u30aa\u30c8\u30cf\u30fb\u30ec\u30ca\u30fc\u30c9";
+        break;
+
+      case 19: 
+        text = "\u30d1\u30eb\u30c6\u30fb\u30ec\u30ca\u30fc\u30c9";
+        break;
+
+      case 20: 
+        text = "\u30bf\u30af\u30c8\u30fb\u30ec\u30ca\u30fc\u30c9";
+        break;
+
+    }
+    return text;
+  };
+
+  function CharacterNameConverter_ConvertBack (value, targetType, parameter, language) {
+    throw $S00().Construct();
+  };
+
+  JSIL.MakeType({
+      BaseType: $asm_mscorlib.TypeRef("System.Object"), 
+      Name: "HTML5.CharacterNameConverter", 
+      IsPublic: true, 
+      IsReferenceType: true, 
+      MaximumConstructorArguments: 0, 
+    }, function ($interfaceBuilder) {
+    $ = $interfaceBuilder;
+
+    $.Method({Static:false, Public:true }, ".ctor", 
+      JSIL.MethodSignature.Void, 
+      CharacterNameConverter__ctor
+    );
+
+    $.Method({Static:false, Public:true , Virtual:true }, "Convert", 
+      new JSIL.MethodSignature($.Object, [
+          $.Object, $asm_mscorlib.TypeRef("System.Type"), 
+          $.Object, $.String
+        ]), 
+      CharacterNameConverter_Convert
+    );
+
+    $.Method({Static:false, Public:true , Virtual:true }, "ConvertBack", 
+      new JSIL.MethodSignature($.Object, [
+          $.Object, $asm_mscorlib.TypeRef("System.Type"), 
+          $.Object, $.String
+        ]), 
+      CharacterNameConverter_ConvertBack
+    );
+
+    $.ImplementInterfaces(
+      /* 0 */ $asm_CSharpXamlForHtml5.TypeRef("Windows.UI.Xaml.Data.IValueConverter")
+    );
+
+    return function (newThisType) { $thisType = newThisType; }; 
+  });
+
+})();
+
 /* class HTML5.MainPage */ 
 
 (function MainPage$Members () {
@@ -285,70 +464,82 @@ JSIL.MakeEnum(
     return ($T05 = JSIL.Memoize($asm_HTML5.HTML5.CharacterColorConverter)) ();
   };
   var $T06 = function () {
-    return ($T06 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.ResourceDictionary)) ();
+    return ($T06 = JSIL.Memoize($asm_HTML5.HTML5.CharacterNameConverter)) ();
   };
   var $T07 = function () {
-    return ($T07 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.FrameworkElement)) ();
+    return ($T07 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.ResourceDictionary)) ();
   };
   var $T08 = function () {
-    return ($T08 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.Grid)) ();
+    return ($T08 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.FrameworkElement)) ();
   };
   var $T09 = function () {
-    return ($T09 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.RowDefinition)) ();
+    return ($T09 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.Grid)) ();
   };
   var $T0A = function () {
-    return ($T0A = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.GridLength)) ();
+    return ($T0A = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.RowDefinition)) ();
   };
   var $T0B = function () {
-    return ($T0B = JSIL.Memoize($asm_CSharpXamlForHtml5.DotNetForHtml5.Core.TypeFromStringConverters)) ();
+    return ($T0B = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.GridLength)) ();
   };
   var $T0C = function () {
-    return ($T0C = JSIL.Memoize($asm_mscorlib.System.Collections.ObjectModel.Collection$b1.Of($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.RowDefinition))) ();
+    return ($T0C = JSIL.Memoize($asm_CSharpXamlForHtml5.DotNetForHtml5.Core.TypeFromStringConverters)) ();
   };
   var $T0D = function () {
-    return ($T0D = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.ComboBox)) ();
+    return ($T0D = JSIL.Memoize($asm_mscorlib.System.Collections.ObjectModel.Collection$b1.Of($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.RowDefinition))) ();
   };
   var $T0E = function () {
-    return ($T0E = JSIL.Memoize($asm_mscorlib.System.Int32)) ();
+    return ($T0E = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.TextBlock)) ();
   };
   var $T0F = function () {
-    return ($T0F = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.UserControl)) ();
+    return ($T0F = JSIL.Memoize($asm_mscorlib.System.Int32)) ();
   };
   var $T10 = function () {
-    return ($T10 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Shapes.Rectangle)) ();
+    return ($T10 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.Control)) ();
   };
   var $T11 = function () {
-    return ($T11 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Data.Binding)) ();
+    return ($T11 = JSIL.Memoize($asm_mscorlib.System.Double)) ();
   };
   var $T12 = function () {
-    return ($T12 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.PropertyPath)) ();
+    return ($T12 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Data.Binding)) ();
   };
   var $T13 = function () {
-    return ($T13 = JSIL.Memoize($asm_CSharpXamlForHtml5.System.Windows.Markup.StaticResourceExtension)) ();
+    return ($T13 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.PropertyPath)) ();
   };
   var $T14 = function () {
-    return ($T14 = JSIL.Memoize($asm_mscorlib.System.Collections.ObjectModel.Collection$b1.Of($asm_CSharpXamlForHtml5.Windows.UI.Xaml.UIElement))) ();
+    return ($T14 = JSIL.Memoize($asm_CSharpXamlForHtml5.System.Windows.Markup.StaticResourceExtension)) ();
   };
   var $T15 = function () {
-    return ($T15 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.Panel)) ();
+    return ($T15 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.ComboBox)) ();
   };
   var $T16 = function () {
-    return ($T16 = JSIL.Memoize($asm_mscorlib.System.Collections.Generic.List$b1.Of($asm_mscorlib.System.Object))) ();
+    return ($T16 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.UserControl)) ();
   };
   var $T17 = function () {
-    return ($T17 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Data.IValueConverter)) ();
+    return ($T17 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Shapes.Rectangle)) ();
   };
   var $T18 = function () {
-    return ($T18 = JSIL.Memoize($asm_CSharpXamlForHtml5_System_Xaml_dll.System.Windows.Markup.MarkupExtension)) ();
+    return ($T18 = JSIL.Memoize($asm_mscorlib.System.Collections.ObjectModel.Collection$b1.Of($asm_CSharpXamlForHtml5.Windows.UI.Xaml.UIElement))) ();
   };
   var $T19 = function () {
-    return ($T19 = JSIL.Memoize($asm_CSharpXamlForHtml5.System.ServiceProvider)) ();
+    return ($T19 = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Controls.Panel)) ();
   };
   var $T1A = function () {
-    return ($T1A = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.DependencyObject)) ();
+    return ($T1A = JSIL.Memoize($asm_mscorlib.System.Collections.Generic.List$b1.Of($asm_mscorlib.System.Object))) ();
   };
   var $T1B = function () {
-    return ($T1B = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Shapes.Shape)) ();
+    return ($T1B = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Data.IValueConverter)) ();
+  };
+  var $T1C = function () {
+    return ($T1C = JSIL.Memoize($asm_CSharpXamlForHtml5_System_Xaml_dll.System.Windows.Markup.MarkupExtension)) ();
+  };
+  var $T1D = function () {
+    return ($T1D = JSIL.Memoize($asm_CSharpXamlForHtml5.System.ServiceProvider)) ();
+  };
+  var $T1E = function () {
+    return ($T1E = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.DependencyObject)) ();
+  };
+  var $T1F = function () {
+    return ($T1F = JSIL.Memoize($asm_CSharpXamlForHtml5.Windows.UI.Xaml.Shapes.Shape)) ();
   };
   var $S00 = function () {
     return ($S00 = JSIL.Memoize(new JSIL.ConstructorSignature($asm_CSharpXamlForHtml5.TypeRef("Windows.UI.Xaml.Data.Binding"), null))) ();
@@ -358,6 +549,9 @@ JSIL.MakeEnum(
   };
   var $S02 = function () {
     return ($S02 = JSIL.Memoize(new JSIL.ConstructorSignature($asm_mscorlib.TypeRef("System.Collections.Generic.List`1", [$asm_mscorlib.TypeRef("System.Object")]), null))) ();
+  };
+  var $S03 = function () {
+    return ($S03 = JSIL.Memoize(new JSIL.MethodSignature(null, [$asm_mscorlib.TypeRef("System.Object")]))) ();
   };
 
   function MainPage__ctor () {
@@ -372,36 +566,56 @@ JSIL.MakeEnum(
       return;
     }
     this._contentLoaded = true;
-    var CharacterColorConverter_f03edb545b1d43d0a89bb5c09d18370c = new ($T05())();
-    (this['get_Resources']())['set_Item']("CharacterColorConverterKey", CharacterColorConverter_f03edb545b1d43d0a89bb5c09d18370c);
-    var Grid_43bcbeeefb7e40c1a1b0e4eea4a043bb = new ($T08())();
-    var RowDefinition_26dfa6e44aa74354b06b65550029a88f = new ($T09())();
-    (RowDefinition_26dfa6e44aa74354b06b65550029a88f.Height = $T0A().$Cast($T0B()['ConvertFromInvariantString']($T0A().__Type__, "Auto"))['MemberwiseClone']());
-    var RowDefinition_011c26ed75b2425aa6db23efa283d6c = new ($T09())();
-    (RowDefinition_011c26ed75b2425aa6db23efa283d6c.Height = $T0A().$Cast($T0B()['ConvertFromInvariantString']($T0A().__Type__, "*"))['MemberwiseClone']());
-    (Grid_43bcbeeefb7e40c1a1b0e4eea4a043bb['get_RowDefinitions']())['Add'](RowDefinition_26dfa6e44aa74354b06b65550029a88f);
-    (Grid_43bcbeeefb7e40c1a1b0e4eea4a043bb['get_RowDefinitions']())['Add'](RowDefinition_011c26ed75b2425aa6db23efa283d6c);
-    var ComboBox_bd7b99e28b844354a67b6dc5ef5da6ac = new ($T0D())();
-    $T08()['SetRow'](ComboBox_bd7b99e28b844354a67b6dc5ef5da6ac, $T0E().$Cast($T0B()['ConvertFromInvariantString']($T0E().__Type__, "0")));
-    $T0F().prototype['RegisterName'].call(this, "CharacterComboBox", ComboBox_bd7b99e28b844354a67b6dc5ef5da6ac);
-    ComboBox_bd7b99e28b844354a67b6dc5ef5da6ac['set_Name']("CharacterComboBox");
-    var Rectangle_e35c951cf39e4f959aba09c406c57484 = new ($T10())();
-    $T08()['SetRow'](Rectangle_e35c951cf39e4f959aba09c406c57484, $T0E().$Cast($T0B()['ConvertFromInvariantString']($T0E().__Type__, "1")));
-    var Binding_f5f9f2318ed440efb12c1f1e496e2f55 = $S00().Construct();
-    Binding_f5f9f2318ed440efb12c1f1e496e2f55['set_Path']($T12().$Cast($T0B()['ConvertFromInvariantString']($T12().__Type__, "SelectedItem")));
-    var StaticResourceExtension_a81d37ba08644941ac80eae5e46f8c4d = $S01().Construct();
-    StaticResourceExtension_a81d37ba08644941ac80eae5e46f8c4d.StaticResourceExtension$ResourceKey$value = "CharacterColorConverterKey";
-    (Grid_43bcbeeefb7e40c1a1b0e4eea4a043bb['get_Children']())['Add'](ComboBox_bd7b99e28b844354a67b6dc5ef5da6ac);
-    (Grid_43bcbeeefb7e40c1a1b0e4eea4a043bb['get_Children']())['Add'](Rectangle_e35c951cf39e4f959aba09c406c57484);
-    this['set_Content'](Grid_43bcbeeefb7e40c1a1b0e4eea4a043bb);
-    this.CharacterComboBox = ComboBox_bd7b99e28b844354a67b6dc5ef5da6ac;
-    var parents_f2d52d2bea4349659cf94b1b12650ec0 = $S02().Construct();
-    parents_f2d52d2bea4349659cf94b1b12650ec0['Add'](Rectangle_e35c951cf39e4f959aba09c406c57484);
-    parents_f2d52d2bea4349659cf94b1b12650ec0['Add'](Grid_43bcbeeefb7e40c1a1b0e4eea4a043bb);
-    parents_f2d52d2bea4349659cf94b1b12650ec0['Add'](this);
-    Binding_f5f9f2318ed440efb12c1f1e496e2f55['set_Converter']($T17().$Cast(StaticResourceExtension_a81d37ba08644941ac80eae5e46f8c4d['ProvideValue'](new ($T19())(Binding_f5f9f2318ed440efb12c1f1e496e2f55, null, parents_f2d52d2bea4349659cf94b1b12650ec0))));
-    Binding_f5f9f2318ed440efb12c1f1e496e2f55['set_Source'](ComboBox_bd7b99e28b844354a67b6dc5ef5da6ac);
-    Rectangle_e35c951cf39e4f959aba09c406c57484['SetBinding']($T1B().FillProperty, Binding_f5f9f2318ed440efb12c1f1e496e2f55);
+    var CharacterColorConverter_9c315c49f21f453c998761632120e69f = new ($T05())();
+    var CharacterNameConverter_8950189e427e4ffab67da02437427e65 = new ($T06())();
+    (this['get_Resources']())['set_Item']("CharacterColorConverterKey", CharacterColorConverter_9c315c49f21f453c998761632120e69f);
+    (this['get_Resources']())['set_Item']("CharacterNameConverterKey", CharacterNameConverter_8950189e427e4ffab67da02437427e65);
+    var Grid_e210bdda1a3e48bca37a138d622454c2 = new ($T09())();
+    var RowDefinition_eb81b2972d4c4ece8363540bfde807cc = new ($T0A())();
+    (RowDefinition_eb81b2972d4c4ece8363540bfde807cc.Height = $T0B().$Cast($T0C()['ConvertFromInvariantString']($T0B().__Type__, "Auto"))['MemberwiseClone']());
+    var RowDefinition_16d6ab8c1d1545de81aaf9f5cbee5c19 = new ($T0A())();
+    (RowDefinition_16d6ab8c1d1545de81aaf9f5cbee5c19.Height = $T0B().$Cast($T0C()['ConvertFromInvariantString']($T0B().__Type__, "Auto"))['MemberwiseClone']());
+    var RowDefinition_56c18c76b1774c8aaef0df0c5fd70638 = new ($T0A())();
+    (RowDefinition_56c18c76b1774c8aaef0df0c5fd70638.Height = $T0B().$Cast($T0C()['ConvertFromInvariantString']($T0B().__Type__, "*"))['MemberwiseClone']());
+    (Grid_e210bdda1a3e48bca37a138d622454c2['get_RowDefinitions']())['Add'](RowDefinition_eb81b2972d4c4ece8363540bfde807cc);
+    (Grid_e210bdda1a3e48bca37a138d622454c2['get_RowDefinitions']())['Add'](RowDefinition_16d6ab8c1d1545de81aaf9f5cbee5c19);
+    (Grid_e210bdda1a3e48bca37a138d622454c2['get_RowDefinitions']())['Add'](RowDefinition_56c18c76b1774c8aaef0df0c5fd70638);
+    var TextBlock_9b14daa7a0da43baa864b0a34d56762a = new ($T0E())();
+    $T09()['SetRow'](TextBlock_9b14daa7a0da43baa864b0a34d56762a, $T0F().$Cast($T0C()['ConvertFromInvariantString']($T0F().__Type__, "0")));
+    TextBlock_9b14daa7a0da43baa864b0a34d56762a['set_FontSize']($T11().$Cast($T0C()['ConvertFromInvariantString']($T11().__Type__, "18")));
+    var Binding_54e2ff32927c45f2abceed63623961e7 = $S00().Construct();
+    Binding_54e2ff32927c45f2abceed63623961e7['set_Path']($T13().$Cast($T0C()['ConvertFromInvariantString']($T13().__Type__, "SelectedItem")));
+    var StaticResourceExtension_809cff32f7b749789e7415bd8b0c4624 = $S01().Construct();
+    StaticResourceExtension_809cff32f7b749789e7415bd8b0c4624.StaticResourceExtension$ResourceKey$value = "CharacterNameConverterKey";
+    var ComboBox_7b8c2d797ca948b6b9e5d7c5afda1c2e = new ($T15())();
+    $T09()['SetRow'](ComboBox_7b8c2d797ca948b6b9e5d7c5afda1c2e, $T0F().$Cast($T0C()['ConvertFromInvariantString']($T0F().__Type__, "1")));
+    $T16().prototype['RegisterName'].call(this, "CharacterComboBox", ComboBox_7b8c2d797ca948b6b9e5d7c5afda1c2e);
+    ComboBox_7b8c2d797ca948b6b9e5d7c5afda1c2e['set_Name']("CharacterComboBox");
+    var Rectangle_08b931994e7a431d8f166e26211dbe1e = new ($T17())();
+    $T09()['SetRow'](Rectangle_08b931994e7a431d8f166e26211dbe1e, $T0F().$Cast($T0C()['ConvertFromInvariantString']($T0F().__Type__, "2")));
+    var Binding_7c4b4a9cd9d04bb0aca3c79374f1aeb7 = $S00().Construct();
+    Binding_7c4b4a9cd9d04bb0aca3c79374f1aeb7['set_Path']($T13().$Cast($T0C()['ConvertFromInvariantString']($T13().__Type__, "SelectedItem")));
+    var StaticResourceExtension_c5d46a1d427548409eb140c9e6f7d718 = $S01().Construct();
+    StaticResourceExtension_c5d46a1d427548409eb140c9e6f7d718.StaticResourceExtension$ResourceKey$value = "CharacterColorConverterKey";
+    (Grid_e210bdda1a3e48bca37a138d622454c2['get_Children']())['Add'](TextBlock_9b14daa7a0da43baa864b0a34d56762a);
+    (Grid_e210bdda1a3e48bca37a138d622454c2['get_Children']())['Add'](ComboBox_7b8c2d797ca948b6b9e5d7c5afda1c2e);
+    (Grid_e210bdda1a3e48bca37a138d622454c2['get_Children']())['Add'](Rectangle_08b931994e7a431d8f166e26211dbe1e);
+    this['set_Content'](Grid_e210bdda1a3e48bca37a138d622454c2);
+    this.CharacterComboBox = ComboBox_7b8c2d797ca948b6b9e5d7c5afda1c2e;
+    var parents_d73fefb41f2847ad8322347efc234861 = $S02().Construct();
+    $S03().CallVirtual("Add", null, parents_d73fefb41f2847ad8322347efc234861, TextBlock_9b14daa7a0da43baa864b0a34d56762a);
+    $S03().CallVirtual("Add", null, parents_d73fefb41f2847ad8322347efc234861, Grid_e210bdda1a3e48bca37a138d622454c2);
+    $S03().CallVirtual("Add", null, parents_d73fefb41f2847ad8322347efc234861, this);
+    Binding_54e2ff32927c45f2abceed63623961e7['set_Converter']($T1B().$Cast(StaticResourceExtension_809cff32f7b749789e7415bd8b0c4624['ProvideValue'](new ($T1D())(Binding_54e2ff32927c45f2abceed63623961e7, null, parents_d73fefb41f2847ad8322347efc234861))));
+    Binding_54e2ff32927c45f2abceed63623961e7['set_Source'](ComboBox_7b8c2d797ca948b6b9e5d7c5afda1c2e);
+    TextBlock_9b14daa7a0da43baa864b0a34d56762a['SetBinding']($T0E().TextProperty, Binding_54e2ff32927c45f2abceed63623961e7);
+    var parents_0b73761565de4c4b93ea46962d642ebf = $S02().Construct();
+    $S03().CallVirtual("Add", null, parents_0b73761565de4c4b93ea46962d642ebf, Rectangle_08b931994e7a431d8f166e26211dbe1e);
+    $S03().CallVirtual("Add", null, parents_0b73761565de4c4b93ea46962d642ebf, Grid_e210bdda1a3e48bca37a138d622454c2);
+    $S03().CallVirtual("Add", null, parents_0b73761565de4c4b93ea46962d642ebf, this);
+    Binding_7c4b4a9cd9d04bb0aca3c79374f1aeb7['set_Converter']($T1B().$Cast(StaticResourceExtension_c5d46a1d427548409eb140c9e6f7d718['ProvideValue'](new ($T1D())(Binding_7c4b4a9cd9d04bb0aca3c79374f1aeb7, null, parents_0b73761565de4c4b93ea46962d642ebf))));
+    Binding_7c4b4a9cd9d04bb0aca3c79374f1aeb7['set_Source'](ComboBox_7b8c2d797ca948b6b9e5d7c5afda1c2e);
+    Rectangle_08b931994e7a431d8f166e26211dbe1e['SetBinding']($T1F().FillProperty, Binding_7c4b4a9cd9d04bb0aca3c79374f1aeb7);
   };
 
   JSIL.MakeType({
