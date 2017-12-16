@@ -12,9 +12,11 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ComboBox Grid.Row="0" Name="CharacterComboBox"/>
-        <Rectangle Grid.Row="1" Fill="{Binding ElementName=CharacterComboBox, Path=SelectedItem, Converter={StaticResource CharacterColorConverterKey}}"/>
+        <TextBlock Grid.Row="0" Text="{Binding ElementName=CharacterComboBox, Path=SelectedItem}"/>
+        <ComboBox Grid.Row="1" Name="CharacterComboBox"/>
+        <Rectangle Grid.Row="2" Fill="{Binding ElementName=CharacterComboBox, Path=SelectedItem, Converter={StaticResource CharacterColorConverterKey}}"/>
     </Grid>
 </Page>
