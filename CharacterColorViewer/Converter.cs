@@ -41,6 +41,10 @@ namespace CharacterColorViewer
 
                 case CharacterName.Amagi_Marine: brushColor = Colors.Orange; break;
                 case CharacterName.Hojo_Miki:    brushColor = Colors.Violet; break;
+
+                case CharacterName.Otoha_Leonard: brushColor = Colors.LightPink;    break;
+                case CharacterName.Parte_Leonard: brushColor = Colors.Cyan;         break;
+                case CharacterName.Tact_Leonard:  brushColor = Colors.Orange;       break;
             }
 
             return new SolidColorBrush(brushColor);

@@ -33,5 +33,10 @@ namespace CharacterColorViewer
         // アイドル
         Amagi_Marine,
         Hojo_Miki,
+
+        // レナード探偵事務所
+        Otoha_Leonard,
+        Parte_Leonard,
+        Tact_Leonard,
     }
 }
